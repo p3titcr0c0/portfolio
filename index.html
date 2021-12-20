@@ -29,31 +29,36 @@
       </li>
       <ul>
         <li class="depth-2">
-          <a>test</a>
+          <a href="#" onclick=select(1);>P1</a>
         </li>
         <li class="depth-2">
-          <a>test</a>
+          <a href="#" onclick=select(2);>P2</a>
         </li>
         <li class="depth-2">
-          <a>test</a>
+          <a href="#" onclick=select(3);>P3</a>
         </li>
         <li class="depth-2">
-          <a>test</a>
+          <a href="#" onclick=select(4);>P4</a>
         </li>
         <li class="depth-2">
-          <a>test</a>
+          <a href="#" onclick=select(5);>P5</a>
         </li>
       </li>
       </ul>
       </ul>
       <title style="display: none;">Petit croco</title>
     </div>
-    <div class="content">
-    <p>I'm a computer science student who wants to specialize in <b>Web3</b> .</p></div>
+    <div id="text" class="content">
+      <div id="Explanations">
+        <p>I'm a computer science student who wants to specialize in <b>Web3</b> .</p>
+      </div>
     <div class="clear"></div>
   </div>
   </body>
   <script>
-    console.log('Le js marche it sur githubpages');
+    function select(tmp){
+      console.log(tmp);
+      document.getElementById("Explanations").innerHTML = "<p>click : P"+tmp+"</p>";
+    }
   </script>
 </html>
