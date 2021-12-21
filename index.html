@@ -25,23 +25,26 @@
       </div>
       <ul>
       <li class="depth-1">
-        <span class="inactive">Projects</span>
+        <span class="inactive"><a onclick=select(null); style="font-size: 24px;background-color: #7c91a4;padding-top: 7px;border-radius: 20px;margin-bottom: 25px;" href="#"><b>Home</b></a></span>
+      </li>
+      <li class="depth-1">
+        <span class="inactive"><b>Projects</b></span>
       </li>
       <ul>
-        <li class="depth-2">
-          <a href="#" onclick=select(1);>P1</a>
+        <li id="1" class="depth-2">
+          <a href="#1" onclick=select(1);>P1</a>
         </li>
-        <li class="depth-2">
-          <a href="#" onclick=select(2);>P2</a>
+        <li id="2" class="depth-2">
+          <a href="#2" onclick=select(2);>P2</a>
         </li>
-        <li class="depth-2">
-          <a href="#" onclick=select(3);>P3</a>
+        <li id="3" class="depth-2">
+          <a href="#3" onclick=select(3);>P3</a>
         </li>
-        <li class="depth-2">
-          <a href="#" onclick=select(4);>P4</a>
+        <li id="4" class="depth-2">
+          <a href="#4" onclick=select(4);>P4</a>
         </li>
-        <li class="depth-2">
-          <a href="#" onclick=select(5);>P5</a>
+        <li id="5" class="depth-2">
+          <a href="#5" onclick=select(5);>P5</a>
         </li>
       </li>
       </ul>
@@ -56,9 +59,38 @@
   </div>
   </body>
   <script>
+    if (window.location.hash.substr(1)<=document.getElementsByClassName("depth-2").length && !(window.location.hash.substr(1)==='')){
+      select(window.location.hash.substr(1));
+    } else {
+      reset(null);
+    }
+
+
     function select(tmp){
-      console.log(tmp);
-      document.getElementById("Explanations").innerHTML = "<p>click : P"+tmp+"</p>";
+      reset();
+
+      if (tmp!=null){
+        document.getElementById(tmp).style.backgroundColor = '#7484b5';
+        if (tmp==1){
+          let innerHTML = "";
+          innerHTML += "<h1> my project P1</h1>";
+          innerHTML += "<p>ababbabab.</p>";
+          innerHTML += "<figure><img alt='' class='screenshot' src='https://www.netcost-security.fr/wp-content/uploads/2021/07/Comment-identifier-les-choses-et-les-objets-dans-les-photos.jpg' width='400'></figure>";
+          innerHTML += "<div class='buttons'><a class='app-link app-download-link' target='_blank'>Download</a><a href='' class='app-link app-source-link' target='_blank'>GitHub</a> </div>";
+          document.getElementById('Explanations').innerHTML = innerHTML;
+
+        } else {
+          document.getElementById('Explanations').innerHTML = "<p>click : P"+tmp+"</p>";
+        }
+      } else {
+        document.getElementById('Explanations').innerHTML = "<p>I'm a computer science student who wants to specialize in <b>Web3</b> .</p>";
+      }
+    }
+
+    function reset(){
+      for (i=0; i<document.getElementsByClassName("depth-2").length; i++) {
+        document.getElementsByClassName("depth-2")[i].style.backgroundColor = '';        
+      }
     }
   </script>
 </html>
