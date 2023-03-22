@@ -1,1 +1,130 @@
-<!DOCTYPE html><html lang="fr"><meta http-equiv="content-type" content="text/html;charset=UTF-8"/> <head> <meta charset="utf-8"/> <title>- Petitcroco portfolio -</title> <link rel="icon" href="favicon.ico"/> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> <meta http-equiv="content-language" content="en"/> <meta http-equiv="imagetoolbar" content="no"/> <link rel="canonical" href="index.html"/> <meta name="title" content="Petitcroco"/> <link href="assets/styles/styles.css" rel="stylesheet"> </head> <body> <div id="wrapper"> <div class="menu"> <a id="name" href="https://github.com/p3titcr0c0">Petit<br>croco</a> <div class="socnet"> <a class="simple-icon email" href="mailto:petitcroco13@gmail.com"></a> <a class="simple-icon github" href="https://github.com/p3titcr0c0" target="_blank"></a> </div><ul> <li class="depth-1"> <span class="inactive"><a onclick=select(null); style="font-size: 24px;background-color: #7c91a4;padding-top: 7px;border-radius: 20px;margin-bottom: 25px;"><b>Home</b></a></span> </li><li class="depth-1"> <span class="inactive"><b>Projects</b></span> </li><ul> <li id="1" class="depth-2"> <a style="cursor:none;" onclick="select(1);">Android App : Haguide</a> </li><li id="2" class="depth-2"> <a style="cursor:none;" onclick="select(2);">Anti-hack : ETH sweeper</a> </li><li id="3" class="depth-2"> <a style="cursor:none;" onclick="select(3);">Tool : KeyHolder-Shell</a> </li><li id="4" class="depth-2"> <a style="cursor:none;" onclick="select(4);">Tool : GPIO controller</a> </li><li id="5" class="depth-2"> <a style="cursor:none;" onclick="select(5);">Virus : Firefox thief</a> </li><li id="6" class="depth-2"> <a style="cursor:none;" onclick="select(6);">Virus : Python spyware</a> </li><li id="7" class="depth-2"> <a style="cursor:none;" onclick="select(7);">...</a> </li></li></ul> </ul> <title style="display: none;">Petit croco</title> </div><div id="text" class="content"> <div id="Explanations"> <p>I'm a computer science student who wants to specialize in <b>Web3</b> .</p><span> <span style="color:#555656;font: 2.2em 'Fira Sans', sans-serif;"><strong><</strong></span><br><h2 style="color:#4a4aff;margin-top:-25px;margin-bottom:-48px;font-style: italic;font: italic small-caps bold 46px/2 cursive;">Welcome</h2><br><span style="color:#555656;font: 2.2em 'Fira Sans', sans-serif;"><strong>/></strong></span> </span> </div><div class="clear"></div></div></body> <script>if (window.location.hash.substr(1)<=document.getElementsByClassName("depth-2").length && !(window.location.hash.substr(1)==='')){select(window.location.hash.substr(1));}else{reset(null);}function select(tmp){reset(); if (tmp!=null){document.getElementById(tmp).style.backgroundColor='#7484b5'; if (tmp==1){let innerHTML=""; innerHTML +="<h1>An application for discovering a tourist place</h1>"; innerHTML +="<p>Available for all android devices.</p>"; innerHTML +="<div style='margin-bottom: 25px;display: grid;grid-template-columns: repeat(2, 1fr);margin-left: -50px; grid-gap: 1em'><figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/1.jpg' width='250'></figure>"; innerHTML +="<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/2.jpg' width=250'></figure>"; innerHTML +="<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/3.jpg' width=250'></figure>"; innerHTML +="<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/4.jpg' width=250'></figure>"; innerHTML +="<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/5.jpg' width=250'></figure>"; innerHTML +="<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/6.jpg' width=250'></figure></div>"; document.getElementById('Explanations').innerHTML=innerHTML;}else if (tmp==2){let innerHTML=""; innerHTML +="<h1>Ethereum Sweeper Script</h1>"; innerHTML +="<p>A nodejs script to steal ethers deposit from a hacker who tries to perform any transaction on an account that does not belong to him.</p><hr><p></p>"; innerHTML +="<p>Useful to help someone who has disclosed their private key. The malicious person must deposit ether to interact with smart contracts or make transfers. Thus from his deposit the ethers are transferred and he cannot carry out his theft of the account.</p>"; document.getElementById('Explanations').innerHTML=innerHTML;}else if (tmp==3){let innerHTML=""; innerHTML +="<h1>KeyHolder-Shell</h1>"; innerHTML +="<p>Tool written in C grouping together the major uses of the Unix shell in different chapters.</p>"; innerHTML +="<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/KeyHolder-Shell/main/content/slide.png' width='400'></figure>"; innerHTML +="<div class='buttons'><a href='https://github.com/p3titcr0c0/KeyHolder-Shell' class='app-link app-source-link' target='_blank'>GitHub</a> </div>"; document.getElementById('Explanations').innerHTML=innerHTML;}else if (tmp==4){let innerHTML=""; innerHTML +="<h1>GPIO-hub-controller</h1>"; innerHTML +="<p>A script who managing the GPIO output port of any raspberry pi using Pi.GPIO, different uses are possible: leds, fans, etc.</p>"; innerHTML +="<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/GPIO-hub-controller/master/img/help.PNG' width='400'></figure>"; innerHTML +="<div class='buttons'><a href='https://github.com/p3titcr0c0/GPIO-hub-controller' class='app-link app-source-link' target='_blank'>GitHub</a> </div>"; document.getElementById('Explanations').innerHTML=innerHTML;}else if (tmp==5){let innerHTML=""; innerHTML +="<h1>Browser extension : Inputs thief firefox</h1>"; innerHTML +="<p>Inputs thief firefox is an extension working on a firefox web browser, she takes care of retrieving all inputs with type='text', site, time and date. Once harvested, everything is sent to an online database without the user's knowledge.</p>"; innerHTML +="<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/inputs-thief-firefox/master/screens/popup_censored.jpg' width='300'></figure>"; innerHTML +="<div class='buttons'><a href='https://github.com/p3titcr0c0/inputs-thief-firefox' class='app-link app-source-link' target='_blank'>GitHub</a> </div>"; document.getElementById('Explanations').innerHTML=innerHTML;}else if (tmp==6){let innerHTML=""; innerHTML +="<h1>Python spyware</h1>"; innerHTML +="<p>A suite of python tools dedicated to spying a machine running on GNU / linux with Opencv2/Pyxhook.</p>"; innerHTML +="<div class='buttons'><a href='https://github.com/p3titcr0c0/python-spyware' class='app-link app-source-link' target='_blank'>GitHub</a> </div>"; document.getElementById('Explanations').innerHTML=innerHTML;}else{document.getElementById('Explanations').innerHTML="<p>... : P"+tmp+"</p>";}}else{document.getElementById('Explanations').innerHTML="<p>I'm a computer science student who wants to specialize in <b>Web3</b> .</p><span><span style='color:#555656;font: 2.2em 'Fira Sans', sans-serif;'><strong><</strong></span><br><h2 style='color:#4a4aff;margin-top:-25px;margin-bottom:-46px;font-style: italic;font: italic small-caps bold 46px/2 cursive;'>Welcome</h2><br><span style='color:#555656;font: 2.2em 'Fira Sans', sans-serif;'><strong>/></strong></span></span>";}}function reset(){for (i=0; i<document.getElementsByClassName("depth-2").length; i++){document.getElementsByClassName("depth-2")[i].style.backgroundColor='';}}</script></html>
+<!DOCTYPE html>
+<html lang="fr">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <title>- Petitcroco portfolio -</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-language" content="en" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="canonical" href="index.html" />
+    <meta name="title" content="Petitcroco" />
+    <link href="assets/styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="menu"> <a id="name" href="https://github.com/p3titcr0c0">Petit<br>croco</a>
+            <div class="socnet"> <a class="simple-icon email" href="mailto:petitcroco13@gmail.com"></a> <a class="simple-icon github" href="https://github.com/p3titcr0c0" target="_blank"></a> </div>
+            <ul>
+                <li class="depth-1"> <span class="inactive"><a onclick=select(null); style="cursor: zoom-in;font-size: 24px;background-color: #7c91a4;padding-top: 7px;border-radius: 20px;margin-bottom: 25px;"><b class="test">Home</b></a></span> </li>
+                <li class="depth-1"> <span class="inactive"><b>Projects</b></span> </li>
+                <ul>
+                    <li id="1" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(1);">Android App : Haguide</a> </li>
+                    <li id="7" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(7);">Program : PaintLite</a> </li>
+                    <li id="2" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(2);">Anti-hack : ETH sweeper</a> </li>
+                    <li id="3" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(3);">Tool : KeyHolder-Shell</a> </li>
+                    <li id="4" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(4);">Tool : GPIO controller</a> </li>
+                    <li id="5" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(5);">Virus : Firefox thief</a> </li>
+                    <li id="6" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(6);">Virus : Python spyware</a> </li>
+                    <li id="8" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(8);">...</a> </li>
+                    </li>
+                </ul>
+            </ul>
+            <title style="display: zoom-in;">Petit croco</title>
+        </div>
+        <div id="text" class="content">
+            <div id="Explanations">
+                <p>I'm a computer science student who wants to specialize in <b>Web3</b> .</p><span> <span style="color:#555656;font: 2.2em 'Fira Sans', sans-serif;"><strong>
+                            <</strong></span><br>
+                    <h2 style="color:#4a4aff;margin-top:-25px;margin-bottom:-48px;font-style: italic;font: italic small-caps bold 46px/2 cursive;">Welcome</h2><br><span style="color:#555656;font: 2.2em 'Fira Sans', sans-serif;"><strong>/></strong></span>
+                </span>
+            </div>
+            <div class="clear"></div>
+        </div>
+</body>
+<script>
+    if (window.location.hash.substr(1) <= document.getElementsByClassName("depth-2").length && !(window.location.hash.substr(1) === '')) {
+        select(window.location.hash.substr(1));
+    } else {
+        reset(null);
+    }
+
+    function select(tmp) {
+        reset();
+        if (tmp != null) {
+            document.getElementById(tmp).style.backgroundColor = '#7484b5';
+            if (tmp == 1) {
+                let innerHTML = "";
+                innerHTML += "<h1>An application for discovering a tourist place</h1>";
+                innerHTML += "<p>Available for all android devices.</p>";
+                innerHTML += "<div style='margin-bottom: 25px;display: grid;grid-template-columns: repeat(2, 1fr);margin-left: -50px; grid-gap: 1em'><figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/1.jpg' width='250'></figure>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/2.jpg' width=250'></figure>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/3.jpg' width=250'></figure>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/4.jpg' width=250'></figure>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/5.jpg' width=250'></figure>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/6.jpg' width=250'></figure></div>";
+                document.getElementById('Explanations').innerHTML = innerHTML;
+            } else if (tmp == 2) {
+                let innerHTML = "";
+                innerHTML += "<h1>Ethereum Sweeper Script</h1>";
+                innerHTML += "<p>A nodejs script to steal ethers deposit from a hacker who tries to perform any transaction on an account that does not belong to him.</p><hr><p></p>";
+                innerHTML += "<p>Useful to help someone who has disclosed their private key. The malicious person must deposit ether to interact with smart contracts or make transfers. Thus from his deposit the ethers are transferred and he cannot carry out his theft of the account.</p>";
+                document.getElementById('Explanations').innerHTML = innerHTML;
+            } else if (tmp == 3) {
+                let innerHTML = "";
+                innerHTML += "<h1>KeyHolder-Shell</h1>";
+                innerHTML += "<p>Tool written in C grouping together the major uses of the Unix shell in different chapters.</p>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/KeyHolder-Shell/main/content/slide.png' width='400'></figure>";
+                innerHTML += "<div class='buttons'><a href='https://github.com/p3titcr0c0/KeyHolder-Shell' class='app-link app-source-link' target='_blank'>GitHub</a> </div>";
+                document.getElementById('Explanations').innerHTML = innerHTML;
+            } else if (tmp == 4) {
+                let innerHTML = "";
+                innerHTML += "<h1>GPIO-hub-controller</h1>";
+                innerHTML += "<p>A script who managing the GPIO output port of any raspberry pi using Pi.GPIO, different uses are possible: leds, fans, etc.</p>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/GPIO-hub-controller/master/img/help.PNG' width='400'></figure>";
+                innerHTML += "<div class='buttons'><a href='https://github.com/p3titcr0c0/GPIO-hub-controller' class='app-link app-source-link' target='_blank'>GitHub</a> </div>";
+                document.getElementById('Explanations').innerHTML = innerHTML;
+            } else if (tmp == 5) {
+                let innerHTML = "";
+                innerHTML += "<h1>Browser extension : Inputs thief firefox</h1>";
+                innerHTML += "<p>Inputs thief firefox is an extension working on a firefox web browser, she takes care of retrieving all inputs with type='text', site, time and date. Once harvested, everything is sent to an online database without the user's knowledge.</p>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/inputs-thief-firefox/master/screens/popup_censored.jpg' width='300'></figure>";
+                innerHTML += "<div class='buttons'><a href='https://github.com/p3titcr0c0/inputs-thief-firefox' class='app-link app-source-link' target='_blank'>GitHub</a> </div>";
+                document.getElementById('Explanations').innerHTML = innerHTML;
+            } else if (tmp == 6) {
+                let innerHTML = "";
+                innerHTML += "<h1>Python spyware</h1>";
+                innerHTML += "<p>A suite of python tools dedicated to spying a machine running on GNU / linux with Opencv2/Pyxhook.</p>";
+                innerHTML += "<div class='buttons'><a href='https://github.com/p3titcr0c0/python-spyware' class='app-link app-source-link' target='_blank'>GitHub</a> </div>";
+                document.getElementById('Explanations').innerHTML = innerHTML;
+            } else if (tmp == 7) {
+                let innerHTML = "";
+                innerHTML += "<h1>PaintLite Java</h1>";
+                innerHTML += "<p>this topic deal with a Java GUI program using a lot of conceptions patterns.</p>";
+                innerHTML += "<p>                This Java graphical interface allows editing of a JPanel using software architecture concepts such as MVC, design patterns, and advanced data structures. The project was completed as part of learning advanced design patterns and data structures.</p>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_0.png' width=250'></figure>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_1.png' width=250'></figure>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_2.png' width=250'></figure>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_3.png' width=250'></figure>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_4.png' width=250'></figure>";
+                
+                document.getElementById('Explanations').innerHTML = innerHTML;
+            } else {
+                document.getElementById('Explanations').innerHTML = "<p>... : P" + tmp + "</p>";
+            }
+        } else {
+            document.getElementById('Explanations').innerHTML = "<p>I'm a computer science student who wants to specialize in <b>Web3</b> .</p><span><span style='color:#555656;font: 2.2em 'Fira Sans', sans-serif;'><strong><</strong></span><br><h2 style='color:#4a4aff;margin-top:-25px;margin-bottom:-46px;font-style: italic;font: italic small-caps bold 46px/2 cursive;'>Welcome</h2><br><span style='color:#555656;font: 2.2em 'Fira Sans', sans-serif;'><strong>/></strong></span></span>";
+        }
+    }
+
+    function reset() {
+        for (i = 0; i < document.getElementsByClassName("depth-2").length; i++) {
+            document.getElementsByClassName("depth-2")[i].style.backgroundColor = '';
+        }
+    }
+</script>
+
+</html>
