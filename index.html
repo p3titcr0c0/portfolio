@@ -27,6 +27,7 @@
                     <li id="2" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(2);">Anti-hack : ETH sweeper</a> </li>
                     <li id="3" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(3);">Tool : KeyHolder-Shell</a> </li>
                     <li id="4" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(4);">Tool : GPIO controller</a> </li>
+                    <li id="9" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(9);">PineScript : Trading indicators</a> </li>
                     <li id="5" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(5);">Virus : Firefox thief</a> </li>
                     <li id="6" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(6);">Virus : Python spyware</a> </li>
                     <li id="8" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(8);">...</a> </li>
@@ -37,7 +38,7 @@
         </div>
         <div id="text" class="content">
             <div id="Explanations">
-                <p>I'm a computer science student who wants to specialize in <b>Web3</b> .</p><span> <span style="color:#555656;font: 2.2em 'Fira Sans', sans-serif;"><strong>
+                <p>I'm a computer science student pursuing a Master's degree in AI and Cybersecurity. I want to specialize  myself in <b>Web3</b> & <b>blockchains</b>.</p><span> <span style="color:#555656;font: 2.2em 'Fira Sans', sans-serif;"><strong>
                             <</strong></span><br>
                     <h2 style="color:#4a4aff;margin-top:-25px;margin-bottom:-48px;font-style: italic;font: italic small-caps bold 46px/2 cursive;">Welcome</h2><br><span style="color:#555656;font: 2.2em 'Fira Sans', sans-serif;"><strong>/></strong></span>
                 </span>
@@ -103,13 +104,19 @@
             } else if (tmp == 7) {
                 let innerHTML = "";
                 innerHTML += "<h1>PaintLite Java</h1>";
-                innerHTML += "<p>this topic deal with a Java GUI program using a lot of conceptions patterns.</p>";
-                innerHTML += "<p>                This Java graphical interface allows editing of a JPanel using software architecture concepts such as MVC, design patterns, and advanced data structures. The project was completed as part of learning advanced design patterns and data structures.</p>";
-                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_0.png' width='100%'></figure>";
-                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_1.png' width='100%'></figure>";
-                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_2.png' width='100%'></figure>";
-                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_3.png' width='100%'></figure>";
-                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_4.png' width='100%'></figure>";
+                innerHTML += "<p>This topic deal with a Java GUI program using a lot of conceptions patterns.</p>";
+                innerHTML += "<p>This Java graphical interface allows editing of a JPanel using software architecture concepts such as MVC, design patterns, and advanced data structures. The project was completed as part of learning advanced design patterns and data structures.</p>";
+                innerHTML += "<figure style='margin-bottom: 1em'><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_0.png' width='100%'></figure>";
+                innerHTML += "<figure style='margin-bottom: 1em'><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_1.png' width='100%'></figure>";
+                innerHTML += "<figure style='margin-bottom: 1em'><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_2.png' width='100%'></figure>";
+                innerHTML += "<figure style='margin-bottom: 1em'><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_3.png' width='100%'></figure>";
+                innerHTML += "<figure style='margin-bottom: 1em'><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/paint2_4.png' width='250px'></figure>";
+                
+                document.getElementById('Explanations').innerHTML = innerHTML;
+            } else if (tmp == 9) {
+                let innerHTML = "";
+                innerHTML += "<h1>My <a target='_blank' href='https://www.tradingview.com/'>TradingView</a> trading indicators</h1>";
+                innerHTML += "<p>Pine Script™ is TradingView’s programming language. It allows traders to create their own trading tools.</p>";
                 
                 document.getElementById('Explanations').innerHTML = innerHTML;
             } else {
