@@ -16,14 +16,15 @@
 
 <body>
     <div id="wrapper">
-        <div class="menu"> <a id="name" href="https://github.com/p3titcr0c0">Petit<br>croco</a>
-            <div class="socnet"> <a class="simple-icon email" href="mailto:petitcroco13@gmail.com"></a> <a class="simple-icon github" href="https://github.com/p3titcr0c0" target="_blank"></a> </div>
+        <div class="menu"> <a id="name" href="https://github.com/p3titcr0c0">Mat<br><span style='font-size: 0.8em;font-weight: 800;color: lime;' style>@p3titcr0c0</span></a>
+            <div class="socnet"><a class="simple-icon linkedin" href="https://www.linkedin.com/in/mathis-drd/"></a><a class="simple-icon email" href="mailto:mathis-durand@outlook.com"></a> <a class="simple-icon github" href="https://github.com/p3titcr0c0" target="_blank"></a> </div>
             <ul>
                 <li class="depth-1"> <span class="inactive"><a onclick=select(null); style="cursor: zoom-in;font-size: 24px;background-color: #7c91a4;padding-top: 7px;border-radius: 20px;margin-bottom: 25px;"><b class="test">Home</b></a></span> </li>
                 <li class="depth-1"> <span class="inactive"><b>Projects</b></span> </li>
                 <ul>
                     <li id="1" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(1);">Android App : Haguide</a> </li>
                     <li id="10" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(10);">Proof of concept : Synchronisation</a> </li>
+                    <li id="14" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(14);">AI for Connect Four game</a> </li>
                     <li id="11" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(11);">'AI' for a Cluedo variation</a> </li>
                     <li id="12" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(12);">Cyber Demo : Port scan attacks </a> </li>
                     <li id="13" class="depth-2"> <a style="cursor:zoom-in;" onclick="select(13);">Multi-agent factory simulation </a> </li>
@@ -65,7 +66,7 @@
             if (tmp == 1) {
                 let innerHTML = "";
                 innerHTML += "<h1>An application for discovering a tourist place</h1>";
-                innerHTML += "<p>Available for all android devices.</p>";
+                innerHTML += "<p>Available for all android devices. Made in Java, SQL back-end.</p>";
                 innerHTML += "<div style='margin-bottom: 25px;display: grid;grid-template-columns: repeat(2, 1fr);margin-left: -50px; grid-gap: 1em'><figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/1.jpg' width='250'></figure>";
                 innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/2.jpg' width=250'></figure>";
                 innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/haguide/3.jpg' width=250'></figure>";
@@ -84,6 +85,7 @@
                 innerHTML += "<h1>KeyHolder-Shell</h1>";
                 innerHTML += "<p>Tool written in C grouping together the major uses of the Unix shell in different chapters.</p>";
                 innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/KeyHolder-Shell/main/content/slide.png' width='400'></figure>";
+                innerHTML += "<br><figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/KeyHolder-Shell/main/content/chapters.png' width='400'></figure>";
                 innerHTML += "<div class='buttons'><a href='https://github.com/p3titcr0c0/KeyHolder-Shell' class='app-link app-source-link' target='_blank'>GitHub</a> </div>";
                 document.getElementById('Explanations').innerHTML = innerHTML;
             } else if (tmp == 4) {
@@ -104,7 +106,9 @@
                 let innerHTML = "";
                 innerHTML += "<h1>Python spyware</h1>";
                 innerHTML += "<p>A suite of python tools dedicated to spying a machine running on GNU / linux with Opencv2/Pyxhook.</p>";
+                innerHTML += "<ul><b>Available tools</b> <li>the keylogger : capture all keyboard inputs</li><li>the spycam : capture picture from the camera with a regular time interval</li> </ul>";
                 innerHTML += "<div class='buttons'><a href='https://github.com/p3titcr0c0/python-spyware' class='app-link app-source-link' target='_blank'>GitHub</a> </div>";
+                
                 document.getElementById('Explanations').innerHTML = innerHTML;
             } else if (tmp == 7) {
                 let innerHTML = "";
@@ -122,36 +126,90 @@
                 let innerHTML = "";
                 innerHTML += "<h1>My <a target='_blank' href='https://www.tradingview.com/'>TradingView</a> trading indicators</h1>";
                 innerHTML += "<p>Pine Script™ is TradingView’s programming language. It allows traders to create their own trading tools.</p>";
-                
+                innerHTML += "<ul><b>Indicators :</b><li>MA20, MA50, MA100, MA150</li><li>Bollinger Bands</li><li>pivot</li><li>Fibonacci</li></ul>";
+                innerHTML += ""
+
                 document.getElementById('Explanations').innerHTML = innerHTML;
             }  else if (tmp == 10) {
                 let innerHTML = "";
-                innerHTML += "<h1>My <a target='_blank' href='https://www.tradingview.com/'>TradingView</a> trading indicators</h1>";
-                innerHTML += "<p>Pine Script™ is TradingView’s programming language. It allows traders to create their own trading tools.</p>";
+                innerHTML += "<h1>Synchronize sensors and videos in real time with different clocks <a target='_blank' href='https://www.talend.com/resources/what-is-data-synchronization/'>(Proof of concept)</a></h1>";
+                innerHTML += "<p>As part of a study project. It was within my reach to develop a synchronization tool connecting a <u>BLE Bluetooth sensor (accelerometer)</u> and a video acquisition: <u>IP camera</u>. From these sources, implementing data collection interfaces, I was able to synchronize sensor and video data <i>frame by frame</i> in real time (not in post-prod). The use case was the monitoring of elevator door openings, the machine learning of boxing blows and the movement of a horse's tail during foaling. </p>"
+                innerHTML += "<br><h2>Java CLI program capable of saving instant data in paquets in a cloud solution</h2>";
+                innerHTML += "<video style='width: 100%;' controls src='https://github.com/p3titcr0c0/portfolio/raw/9aa11efc5f50498efefb1ecd14b5f174e4e9cf9e/assets/videos/synchronize_2_inputs.mp4'>Java syncApp</video>";
+                innerHTML += "<pre>sh launch.sh && java -jar TouwiSyncApp_*.jar -t < zip every ? seconds > -v < how many videos sources > < video interface, ex:camera_ip:http://192.168.88.201:4747/video > -s < how many sensors ? > < sensors > --webview -p < port ></pre>"
+                innerHTML += "<br><h2>Post-production preview of a sync stream</h2>";
+                innerHTML += "<video style='width: 100%;' controls src='https://github.com/p3titcr0c0/portfolio/raw/main/assets/videos/synchropypreview.mp4'>post prod preview</video>";
                 
                 document.getElementById('Explanations').innerHTML = innerHTML;
             }  else if (tmp == 11) {
                 let innerHTML = "";
-                innerHTML += "<h1>My <a target='_blank' href='https://www.tradingview.com/'>TradingView</a> trading indicators</h1>";
-                innerHTML += "<p>Pine Script™ is TradingView’s programming language. It allows traders to create their own trading tools.</p>";
+                innerHTML += "<h1>Bot resolving variant of a cluedo, based on literal intelligence</h1>";
+                innerHTML += "<p>The goal of this project is to create an AI using a logical formalization to play a variation (without board) of Cluedo. By having knowledge of known cards, unknown cards, expected cards, it is possible to have a perfect formalist beating any strategy</p>";
+                innerHTML += "<br><h2>Screens :</h2>";
+                innerHTML += "<i>GUI init :</i>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Irmabot_start.png' width='400'></figure><br>";
+                innerHTML += "<i>Sigkill to the PID of the prog to get bot data in the standard output :</i>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Irmabot_callpid_9.png' width='400'></figure><br>";
+                innerHTML += "<i>Result : (1000 games -> simpleVersion vs randomBot)</i>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Irmabot_end.png' width='400'></figure>";
+                
+                innerHTML += "<br><h2>Report</h2>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-1.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-2.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-3.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-4.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-5.png' width='400'></figure><br>";
                 
                 document.getElementById('Explanations').innerHTML = innerHTML;
-            }  else if (tmp == 11) {
+            } else if (tmp == 12) {
                 let innerHTML = "";
-                innerHTML += "<h1>My <a target='_blank' href='https://www.tradingview.com/'>TradingView</a> trading indicators</h1>";
-                innerHTML += "<p>Pine Script™ is TradingView’s programming language. It allows traders to create their own trading tools.</p>";
+                innerHTML += "<h1>Port scan attacks with NMAP, +Demo. (30\" conference)</h1>";
+                innerHTML += "<br><h2>Report of the presentation</h2>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-01.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-02.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-03.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-04.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-05.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-06.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-07.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-08.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-09.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-10.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-11.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-12.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-13.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-14.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/NMAP_presentation-15.png' width='400'></figure>";
                 
-                document.getElementById('Explanations').innerHTML = innerHTML;
-            }  else if (tmp == 12) {
-                let innerHTML = "";
-                innerHTML += "<h1>My <a target='_blank' href='https://www.tradingview.com/'>TradingView</a> trading indicators</h1>";
-                innerHTML += "<p>Pine Script™ is TradingView’s programming language. It allows traders to create their own trading tools.</p>";
-                
+                innerHTML += "<br><h2>Demo</h2>";
+                innerHTML += "<p>the demonstration took place in person but here are some of the commands used on a virtual machine with applications containing breaches like apache/nginx/ftp serveur and a opened socket.</p>";
+                innerHTML += "<div class='buttons'><a href='https://github.com/p3titcr0c0/portfolio/blob/22fe241be7ef1caf0e9541e729cd8e7a1b3d6065/assets/PortScan_demo.pdf' class='app-link app-source-link' target='_blank'>Demo PDF Download</a> </div>";
                 document.getElementById('Explanations').innerHTML = innerHTML;
             }  else if (tmp == 13) {
                 let innerHTML = "";
-                innerHTML += "<h1>My <a target='_blank' href='https://www.tradingview.com/'>TradingView</a> trading indicators</h1>";
-                innerHTML += "<p>Pine Script™ is TradingView’s programming language. It allows traders to create their own trading tools.</p>";
+                innerHTML += "<h1>Multiagents factory simulation with <a target='_blank' href='https://jade.tilab.com/'>Jade</a></h1>";
+                innerHTML += "<p>Multiagents system for decentralized planification in a robotic production workshop. This makes it possible to represent skills relating to agents, a constant arrival of products in a factory and communication between agents to exchange information and goods. By creating an optimized system, we ensure that each robot performs the tasks it is best at. All using the agent-oriented library: JADE, and with a Java object architecture.</p><br>  ";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-1.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-2.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-3.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-4.png' width='400'></figure><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/images/Rapport_Irmabot-5.png' width='400'></figure><br>";
+                innerHTML += "<br><h2>Logs for one try:</h2>"
+                innerHTML += "<pre>mat@mat-laptop ~/Desktop/code $ sh launch.sh \nNov 16, 2023 4:38:57 PM jade.core.Runtime beginContainer\nINFO: ----------------------------------\n    This is JADE 4.5.0 - revision 6825 of 23-05-2017 10:06:04\n    downloaded in Open Source, under LGPL restrictions,\n    at http://jade.tilab.com/\n----------------------------------------\nNov 16, 2023 4:38:57 PM jade.imtp.leap.LEAPIMTPManager initialize\nINFO: Listening for intra-platform commands on address:\n- jicp://10.229.32.29:1099\n\nNov 16, 2023 4:38:58 PM jade.core.BaseService init\nINFO: Service jade.core.management.AgentManagement initialized\nNov 16, 2023 4:38:58 PM jade.core.BaseService init\nINFO: Service jade.core.messaging.Messaging initialized\nNov 16, 2023 4:38:58 PM jade.core.BaseService init\nINFO: Service jade.core.resource.ResourceManagement initialized\nNov 16, 2023 4:38:58 PM jade.core.BaseService init\nINFO: Service jade.core.mobility.AgentMobility initialized\nNov 16, 2023 4:38:58 PM jade.core.BaseService init\nINFO: Service jade.core.event.Notification initialized\nNov 16, 2023 4:38:58 PM jade.mtp.http.HTTPServer <init>\nINFO: HTTP-MTP Using XML parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser\nNov 16, 2023 4:38:58 PM jade.core.messaging.MessagingService boot\nINFO: MTP addresses:\nhttp://mat-laptop:7778/acc\nNov 16, 2023 4:38:58 PM jade.core.AgentContainerImpl joinPlatform\nINFO: --------------------------------------\nAgent container Main-Container@10.229.32.29 is ready.\n--------------------------------------------\nMise en place de l'atelier : monAtelier@10.229.32.29:1099/JADE [T=1000 ms, lambda=5]\nMise en place du robot : robot1@10.229.32.29:1099/JADE [T=1000 ms, 3 competences dispo]\nMise en place du robot : robot2@10.229.32.29:1099/JADE [T=1000 ms, 3 competences dispo]\nMise en place du robot : robot3@10.229.32.29:1099/JADE [T=1000 ms, 3 competences dispo]\n[Atelier] INTERRO robot1 (demande ses compétences)\n[Atelier] INTERRO robot2 (demande ses compétences)\n[Atelier] INTERRO robot3 (demande ses compétences)\nWarning: No mapping found for expired timer 1700149139650\n[monAtelier] SKILLS recu FROM robot2] \nvernir=0.615, colorier=0.816, couper=0.968\n\n------------ Recap -------------\n[monAtelier] 0/5 objets traités.\n---------------------------------\n\n[monAtelier] SKILLS recu FROM robot3] \nvernir=0.65, colorier=0.154, couper=0.643\n[monAtelier] SEND produit n°FABRICAT : [ colorier=false ] | TO:[robot2] \n[monAtelier] SKILLS recu FROM robot1] \nvernir=0.368, colorier=0.27, couper=0.156\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false ] (0.219<0.816)\n[robot2] colorier DONE on n°FABRICAT : [ colorier=false ] (0.219<0.816)\n[robot2] SEND n°TERMINE : [ colorier=true ] (TERMINE : [ colorier=true ]) | TO :monAtelier@10.229.32.29:1099/JADE\n[monAtelier] RECEIVE produit n°TERMINE : [ colorier=true ] | FROM:[robot2] \n\n------------ Recap -------------\n[monAtelier] 1/11 objets traités.\n---------------------------------\n\n[Atelier] INTERRO robot2 (demande ses compétences)\n[monAtelier] SEND produit n°FABRICAT : [ colorier=false ] | TO:[robot1] \n[monAtelier] SKILLS recu FROM robot2] \nvernir=0.615, colorier=0.816, couper=0.968\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false ] (0.995<0.27)\n\n------------ Recap -------------\n[monAtelier] 1/18 objets traités.\n---------------------------------\n\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false ] (0.334<0.27)\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false ] (0.517<0.27)\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false ] (0.447<0.27)\n\n------------ Recap -------------\n[monAtelier] 1/24 objets traités.\n---------------------------------\n\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false ] (0.304<0.27)\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false ] (0.191<0.27)\n[robot1] colorier DONE on n°FABRICAT : [ colorier=false ] (0.191<0.27)\n[robot1] SEND n°TERMINE : [ colorier=true ] (TERMINE : [ colorier=true ]) | TO :monAtelier@10.229.32.29:1099/JADE\n[monAtelier] RECEIVE produit n°TERMINE : [ colorier=true ] | FROM:[robot1] \n[Atelier] INTERRO robot1 (demande ses compétences)\n[monAtelier] SEND produit n°FABRICAT : [ vernir=false ] | TO:[robot3] \n\n------------ Recap -------------\n[monAtelier] 2/32 objets traités.\n---------------------------------\n\n[monAtelier] SKILLS recu FROM robot1] \nvernir=0.368, colorier=0.27, couper=0.156\n A ESSAYER de faire son action sur n°FABRICAT : [ vernir=false ] (0.567<0.65)\n[robot3] vernir DONE on n°FABRICAT : [ vernir=false ] (0.567<0.65)\n[robot3] SEND n°TERMINE : [ vernir=true ] (TERMINE : [ vernir=true ]) | TO :monAtelier@10.229.32.29:1099/JADE\n[monAtelier] RECEIVE produit n°TERMINE : [ vernir=true ] | FROM:[robot3] \n[Atelier] INTERRO robot3 (demande ses compétences)\n[monAtelier] SEND produit n°FABRICAT : [ vernir=false colorier=false ] | TO:[robot2] \n\n------------ Recap -------------\n[monAtelier] 3/36 objets traités.\n---------------------------------\n\n[monAtelier] SKILLS recu FROM robot3] \nvernir=0.65, colorier=0.154, couper=0.643\n A ESSAYER de faire son action sur n°FABRICAT : [ vernir=false colorier=false ] (0.469<0.816)\n[robot2] colorier DONE on n°FABRICAT : [ vernir=false colorier=false ] (0.469<0.816)\n{vernir=( agent-identifier :name robot2@10.229.32.29:1099/JADE  :addresses (sequence http://mat-laptop:7778/acc ))}\n A ESSAYER de faire son action sur n°FABRICAT : [ vernir=false colorier=true ] (0.988<0.615)\n\n------------ Recap -------------\n[monAtelier] 3/43 objets traités.\n---------------------------------\n\n A ESSAYER de faire son action sur n°FABRICAT : [ vernir=false colorier=true ] (0.29<0.615)\n[robot2] vernir DONE on n°FABRICAT : [ vernir=false colorier=true ] (0.29<0.615)\n[robot2] SEND n°TERMINE : [ vernir=true colorier=true ] (TERMINE : [ vernir=true colorier=true ]) | TO :monAtelier@10.229.32.29:1099/JADE\n[monAtelier] RECEIVE produit n°TERMINE : [ vernir=true colorier=true ] | FROM:[robot2] \n[Atelier] INTERRO robot2 (demande ses compétences)\n[monAtelier] SEND produit n°FABRICAT : [ colorier=false couper=false ] | TO:[robot3] \n[monAtelier] SKILLS recu FROM robot2] \nvernir=0.615, colorier=0.816, couper=0.968\n\n------------ Recap -------------\n[monAtelier] 4/51 objets traités.\n---------------------------------\n\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false couper=false ] (0.848<0.643)\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false couper=false ] (0.948<0.643)\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false couper=false ] (0.524<0.643)\n[robot3] couper DONE on n°FABRICAT : [ colorier=false couper=false ] (0.524<0.643)\n{colorier=( agent-identifier :name robot1@10.229.32.29:1099/JADE  :addresses (sequence http://mat-laptop:7778/acc ))}\n[robot3] SEND n°FABRICAT : [ colorier=false couper=true ] (FABRICAT : [ colorier=false couper=true ]) | TO :robot1@10.229.32.29:1099/JADE\n\n------------ Recap -------------\n[monAtelier] 4/57 objets traités.\n---------------------------------\n\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false couper=true ] (0.61<0.27)\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false couper=true ] (0.126<0.27)\n[robot1] colorier DONE on n°FABRICAT : [ colorier=false couper=true ] (0.126<0.27)\n[robot1] SEND n°TERMINE : [ colorier=true couper=true ] (TERMINE : [ colorier=true couper=true ]) | TO :monAtelier@10.229.32.29:1099/JADE\n[monAtelier] RECEIVE produit n°TERMINE : [ colorier=true couper=true ] | FROM:[robot1] \n\n------------ Recap -------------\n[monAtelier] 5/63 objets traités.\n---------------------------------\n\n[Atelier] INTERRO robot1 (demande ses compétences)\n[monAtelier] SEND produit n°FABRICAT : [ colorier=false ] | TO:[robot2] \n[monAtelier] SKILLS recu FROM robot1] \nvernir=0.368, colorier=0.27, couper=0.156\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false ] (0.21<0.816)\n[robot2] colorier DONE on n°FABRICAT : [ colorier=false ] (0.21<0.816)\n[robot2] SEND n°TERMINE : [ colorier=true ] (TERMINE : [ colorier=true ]) | TO :monAtelier@10.229.32.29:1099/JADE\n[monAtelier] RECEIVE produit n°TERMINE : [ colorier=true ] | FROM:[robot2] \n\n------------ Recap -------------\n[monAtelier] 6/68 objets traités.\n---------------------------------\n\n[Atelier] INTERRO robot2 (demande ses compétences)\n[monAtelier] SEND produit n°FABRICAT : [ colorier=false ] | TO:[robot1] \n[monAtelier] SKILLS recu FROM robot2] \nvernir=0.615, colorier=0.816, couper=0.968\n A ESSAYER de faire son action sur n°FABRICAT : [ colorier=false ] (0.07<0.27)\n[robot1] colorier DONE on n°FABRICAT : [ colorier=false ] (0.07<0.27)\n[robot1] SEND n°TERMINE : [ colorier=true ] (TERMINE : [ colorier=true ]) | TO :monAtelier@10.229.32.29:1099/JADE\n[monAtelier] RECEIVE produit n°TERMINE : [ colorier=true ] | FROM:[robot1] \n\n------------ Recap -------------\n[monAtelier] 7/73 objets traités.\n---------------------------------\n\n[Atelier] INTERRO robot1 (demande ses compétences)\n[monAtelier] SEND produit n°FABRICAT : [ vernir=false colorier=false couper=false ] | TO:[robot2] \n^CArrêt de l'atelier : monAtelier@10.229.32.29:1099/JADE\nArrêt du robot : robot1@10.229.32.29:1099/JADE\nArrêt du robot : robot2@10.229.32.29:1099/JADE\nArrêt du robot : robot3@10.229.32.29:1099/JADE</pre>";              
+                
+                document.getElementById('Explanations').innerHTML = innerHTML;
+            }   else if (tmp == 14) {
+                let innerHTML = "";
+                innerHTML += "<h1>AI for solving a power 4 in which the current player does not see the opponent's moves</h1>";
+                innerHTML += "<p>This project aims to implement and attempt to solve a Secret variant of Connect 4.</p><br><i><center>Each player sees his own tokens, but not his opponents, until one of his tokens is stacked on top.</center></i><br>";
+                innerHTML += "<figure><img alt='' class='screenshot' src='https://raw.githubusercontent.com/robin-mat/IA_Connect_Four/main/src/resources/drawing.gif' width='400'></figure><br>";
+                innerHTML += "<h2>Report summary</h2><br>";
+                innerHTML += "<figure><img style='width:100%' alt='' class='screenshot' src='https://raw.githubusercontent.com/p3titcr0c0/portfolio/main/assets/dc8ea3cbc9cb4964b41219849877ac44hsAxiZjmzpVdF7Sx-3.png' width='400'></figure><br>";
+                innerHTML += "<h2>Running with</h2>";
+                innerHTML += "<p>Apache ANT & java from scratch.</p>"
+                innerHTML += "<br><h2>Algorithms</h2>";
+                innerHTML += "<ul><li>Algo human brain (naive)</li><li><a href='https://en.wikipedia.org/wiki/Minimax'>MinMax</a> with pruning</li><li>MinMax variation : <a href='https://en.wikipedia.org/wiki/Negamax'>Negamax</a></li><li><a href='https://www.gnu.org/software/gsl/doc/html/montecarlo.html'>One montecarlo algorithm</a></li></ul>"
+                innerHTML += "<div class='buttons'><a href='https://github.com/robin-mat/IA_Connect_Four#banner' class='app-link app-source-link' target='_blank'>GitHub</a> </div>";
                 
                 document.getElementById('Explanations').innerHTML = innerHTML;
             } else {

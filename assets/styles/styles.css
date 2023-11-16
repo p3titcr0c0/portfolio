@@ -433,6 +433,10 @@ a.app-twitter-link:hover{
 	background-image:url(../images/email.png)
 }
 
+.linkedin{
+	background-image:url(../images/linkedin.png)
+}
+
 .github{
 	background-image:url(../images/github.png)
 }
