@@ -390,16 +390,20 @@ a.app-twitter-link:hover{
 	background:inherit
 }
 
-.socnet{
-	margin-left:46px
-}
-
 .socnet div{
 	padding:0;
 	margin:0
 }
+.socnet {
+    display: flex;
+    justify-content: space-evenly; /* Ou utilisez 'space-between' pour un espacement entre chaque icône */
+    align-items: center;
+}
+
+
 
 .simple-icon{
+	margin-right: 10px;
 	display:inline-block;
 	height:32px;
 	width:32px;
@@ -526,3 +530,52 @@ span.inactive{
 	margin-left:-2px
 }
 
+body {
+	background: #E46161
+	font-family: 'Roboto', sans-serif;
+	text-align: center
+  } 
+  
+  .word {
+	color: #fff
+	font-size: 0
+	position: absolute
+	top: 50%
+	width: 100%
+	transform: translateY(-50%)
+	perspective: 800
+  }
+	span {
+	  font-size: 7rem
+	  transform: rotateX(-90deg)
+	  opacity: 0
+	  display: inline-block
+	  transform-origin: bottom
+	  transition: all 500ms ease-in-out
+	  &:nth-child(2){
+		 transition-delay: .1s
+	   }
+	  &:nth-child(3){
+		 transition-delay: .2s
+	   }
+	  &:nth-child(4){
+		transition-delay: .3s
+	   }
+	  &:nth-child(5){
+		transition-delay: .4s
+	   }
+	  &:nth-child(6){
+		transition-delay: .5s
+	   }
+	  &:nth-child(7){
+		transition-delay: .6s
+	   }
+	  &:nth-child(8){
+		transition-delay: .7s
+	   }
+	  }
+	&.active span {
+		transform: rotateX(0deg)
+		transform-origin: top
+		opacity: 1
+	  }
